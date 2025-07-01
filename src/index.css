@@ -101,6 +101,7 @@ All colors MUST be HSL.
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    background-size: 200% 200%;
   }
   
   .bg-gradient-cosmic {
