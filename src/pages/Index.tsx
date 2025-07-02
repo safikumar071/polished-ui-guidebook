@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import FeaturesSplit from '@/components/FeaturesSplit';
 import ServicesGrid from '@/components/ServicesGrid';
+import BentoGrid from '@/components/BentoGrid';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 
@@ -16,6 +17,7 @@ const Index = () => {
         <Features />
         <FeaturesSplit />
         <ServicesGrid />
+        <BentoGrid />
         <Testimonials />
       </main>
       <Footer />

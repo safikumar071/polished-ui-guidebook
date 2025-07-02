@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Check, Shield, Zap, Users, BarChart3, Globe, Rocket } from 'lucide-react';
 
@@ -47,7 +46,7 @@ const FeaturesSplit = () => {
       x: 0,
       transition: { 
         duration: 0.8, 
-        ease: [0.16, 1, 0.3, 1],
+        ease: "easeOut",
         delay: 0.2 
       }
     }
@@ -58,7 +57,7 @@ const FeaturesSplit = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] }
+      transition: { duration: 0.6, ease: "easeOut" }
     }
   };
 
@@ -70,18 +69,9 @@ const FeaturesSplit = () => {
       transition: { 
         delay: i * 0.15, 
         duration: 0.5, 
-        ease: [0.16, 1, 0.3, 1]
+        ease: "easeOut"
       }
     })
-  };
-
-  const sectionVariants2 = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] }
-    }
   };
 
   return (
