@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const brandLogos = [
-    'Google',
-    'Stripe', 
-    'Netflix',
-    'Shopify',
-    'Airbnb',
-    'Spotify'
+    'Slack',
+    'QuickBooks', 
+    'Zoom',
+    'BambooHR',
+    'Workday',
+    'ADP'
   ];
 
   return (
@@ -35,11 +35,11 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
             >
-              The future of{' '}
+              Empower Your Team with{' '}
               <span className="text-gradient bg-gradient-cosmic bg-clip-text text-transparent animate-gradient-shift">
-                modern SaaS
+                Smarter HR
               </span>
-              {' '}starts here
+              {' '}Management
             </motion.h1>
             
             <motion.p 
@@ -48,7 +48,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
             >
-              Cosmic helps you build better, faster, and smarter with AI-driven tools and scalable architecture that transforms your digital experience.
+              From onboarding to payroll, everything you need to manage people, culture, and growth — all in one powerful dashboard that scales with your business.
             </motion.p>
             
             <motion.div 
@@ -71,12 +71,12 @@ const Hero = () => {
                 className="hover:bg-muted/50 transition-all duration-300 hover:scale-105 border-2 px-8 py-6 text-lg rounded-xl shadow-md hover:shadow-lg"
               >
                 <Play className="mr-2 h-5 w-5" />
-                Watch Demo
+                Book a Demo
               </Button>
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Image Mockup */}
+          {/* Right Column - HRMS Dashboard Mockup */}
           <motion.div 
             className="relative"
             initial={{ opacity: 0, x: 100 }}
@@ -85,28 +85,34 @@ const Hero = () => {
           >
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=720&h=480&fit=crop&auto=format"
-                alt="Dashboard preview showing modern SaaS interface"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=720&h=480&fit=crop&auto=format"
+                alt="HRMS Dashboard showing employee management interface"
                 className="w-full h-auto rounded-2xl shadow-xl border border-muted/20 hover:shadow-2xl transition-shadow duration-500"
                 width={720}
                 height={480}
               />
-              {/* Floating elements for visual interest */}
+              {/* Floating HR metrics */}
               <motion.div
-                className="absolute -top-4 -right-4 w-8 h-8 bg-primary rounded-full shadow-lg"
+                className="absolute -top-4 -right-4 bg-primary/10 backdrop-blur-sm text-primary p-3 rounded-xl shadow-lg border border-primary/20"
                 animate={{ y: [-5, 5, -5] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-              />
+              >
+                <div className="text-xs font-medium">Active Employees</div>
+                <div className="text-lg font-bold">247</div>
+              </motion.div>
               <motion.div
-                className="absolute -bottom-6 -left-6 w-12 h-12 bg-accent/20 rounded-full backdrop-blur-sm"
+                className="absolute -bottom-6 -left-6 bg-accent/10 backdrop-blur-sm text-accent p-3 rounded-xl shadow-lg border border-accent/20"
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-              />
+              >
+                <div className="text-xs font-medium">Payroll Processed</div>
+                <div className="text-lg font-bold">98%</div>
+              </motion.div>
             </div>
           </motion.div>
         </div>
 
-        {/* Brand Logos Trust Banner */}
+        {/* HR Tools Trust Banner */}
         <motion.div 
           className="mt-20 text-center"
           initial={{ opacity: 0, y: 30 }}
@@ -114,7 +120,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
         >
           <p className="text-sm text-muted-foreground mb-8 font-medium">
-            Trusted by innovative teams worldwide
+            Integrates seamlessly with your favorite HR tools
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-70">
             {brandLogos.map((brand, index) => (

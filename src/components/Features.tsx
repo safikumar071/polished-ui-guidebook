@@ -1,51 +1,51 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
-  Rocket, 
+  Clock, 
   Shield, 
-  Zap, 
+  FileText, 
   Users, 
   BarChart3, 
-  Globe 
+  UserCheck 
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Features = () => {
   const features = [
     {
-      icon: Rocket,
-      title: 'Blazing Fast Setup',
-      description: 'Launch your product in minutes with zero friction and streamlined deployment processes.',
+      icon: Clock,
+      title: 'Smart Attendance Tracking',
+      description: 'Automated time tracking with geofencing, biometric integration, and real-time monitoring.',
       color: 'text-blue-500'
     },
     {
-      icon: Shield,
-      title: 'Enterprise Security',
-      description: 'End-to-end encryption and access control with bank-level security standards.',
+      icon: FileText,
+      title: 'Automated Payroll Processing',
+      description: 'Process payroll in minutes with automated calculations, tax compliance, and instant payslips.',
       color: 'text-green-500'
     },
     {
-      icon: Zap,
-      title: 'AI-Powered Automation',
-      description: 'Workflows that learn and optimize over time, reducing manual work by 90%.',
+      icon: Users,
+      title: 'Employee Self-Service',
+      description: 'Empower employees with self-service access to payslips, leave requests, and profile updates.',
       color: 'text-yellow-500'
     },
     {
-      icon: Users,
-      title: 'Built to Scale',
-      description: 'Modular architecture that grows with your needs, from startup to enterprise.',
+      icon: UserCheck,
+      title: 'Seamless Onboarding',
+      description: 'Streamlined onboarding workflows with document management and task automation.',
       color: 'text-purple-500'
     },
     {
       icon: BarChart3,
-      title: 'Advanced Analytics',
-      description: 'Deep insights into user behavior with real-time performance metrics.',
+      title: 'HR Analytics & Reports',
+      description: 'Deep insights into workforce metrics, attendance patterns, and performance analytics.',
       color: 'text-pink-500'
     },
     {
-      icon: Globe,
-      title: 'Global CDN',
-      description: 'Worldwide content delivery network ensures fast loading from anywhere on Earth.',
+      icon: Shield,
+      title: 'Compliance Management',
+      description: 'Stay compliant with labor laws, tax regulations, and data protection requirements.',
       color: 'text-cyan-500'
     }
   ];
@@ -83,12 +83,12 @@ const Features = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight text-foreground">
-            Built for speed, scale, and{' '}
-            <span className="text-gradient">success</span>
+            Complete HR suite for{' '}
+            <span className="text-gradient">modern teams</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to transform your ideas into reality with 
-            cutting-edge technology and enterprise-grade reliability.
+            Everything you need to streamline HR operations, from attendance tracking 
+            to payroll processing, all in one integrated platform.
           </p>
         </motion.div>
 

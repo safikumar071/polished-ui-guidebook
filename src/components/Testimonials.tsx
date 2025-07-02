@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Star } from 'lucide-react';
@@ -6,44 +5,44 @@ import { Star } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "This platform transformed our workflow completely. What used to take hours now takes minutes.",
-      name: "Sarah Chen",
-      role: "Product Manager at TechFlow",
+      quote: "Cut our payroll processing time by 80%. This platform transformed our HR operations completely.",
+      name: "Ayesha Khan",
+      role: "HR Manager at DevSync Technologies",
       avatar: "/placeholder.svg",
       rating: 5
     },
     {
-      quote: "The AI automation features are incredible. Our team productivity increased by 300%.",
-      name: "Marcus Rodriguez", 
-      role: "CTO at StartupLab",
+      quote: "The attendance tracking and leave management features are incredibly intuitive. Our employees love it.", 
+      name: "Krish Patel",
+      role: "Operations Lead at Hexagon Solutions",
       avatar: "/placeholder.svg",
       rating: 5
     },
     {
-      quote: "Finally, a tool that actually delivers on its promises. Clean, fast, and reliable.",
-      name: "Emma Thompson",
-      role: "Designer at Creative Co.",
+      quote: "Finally, an HRMS that actually delivers on its promises. Clean interface, powerful features.",
+      name: "Priya Sharma",
+      role: "People Operations at TechFlow Inc",
       avatar: "/placeholder.svg", 
       rating: 5
     },
     {
-      quote: "The security features give us peace of mind. Perfect for enterprise use.",
-      name: "David Kim",
-      role: "Security Lead at FinTech Plus",
+      quote: "The compliance features give us peace of mind. Perfect for our growing startup needs.",
+      name: "Rohit Mehta",
+      role: "Co-founder at StartupLab",
       avatar: "/placeholder.svg",
       rating: 5
     },
     {
-      quote: "Best investment we made this year. The ROI was immediate and significant.",
-      name: "Lisa Wang",
-      role: "Founder at GrowthHack",
+      quote: "Best HR investment we made this year. The ROI was immediate with payroll automation.",
+      name: "Neha Gupta",
+      role: "Founder at GrowthHack Solutions",
       avatar: "/placeholder.svg",
       rating: 5
     },
     {
-      quote: "The customer support is phenomenal. They helped us integrate seamlessly.",
-      name: "Alex Johnson",
-      role: "Lead Developer at AppCorp",
+      quote: "Outstanding customer support helped us integrate seamlessly with our existing tools.",
+      name: "Amit Singh",
+      role: "HR Director at Enterprise Corp",
       avatar: "/placeholder.svg",
       rating: 5
     }
@@ -66,7 +65,7 @@ const Testimonials = () => {
       y: 0,
       transition: { 
         duration: 0.6, 
-        ease: [0.16, 1, 0.3, 1]
+        ease: "easeOut"
       }
     }
   };
@@ -76,7 +75,7 @@ const Testimonials = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] }
+      transition: { duration: 0.6, ease: "easeOut" }
     }
   };
 
@@ -102,12 +101,12 @@ const Testimonials = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight text-foreground">
-            Loved by startups, teams, and{' '}
-            <span className="text-gradient">creators</span>
+            Trusted by HR teams and{' '}
+            <span className="text-gradient">growing companies</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of satisfied users who have transformed their workflows 
-            and achieved remarkable results with our platform.
+            Join hundreds of organizations who have streamlined their HR processes 
+            and improved employee satisfaction with our platform.
           </p>
         </motion.div>
 
@@ -155,7 +154,7 @@ const Testimonials = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
